@@ -213,6 +213,11 @@ if (grep -Fiq "hg+" requirements.txt) then
   bpwatch stop mercurial_install
 fi
 
+# Install libffi
+bpwatch start libffi_install
+source $BIN_DIR/steps/libffi
+bpwatch stop libffi_install
+
 # Install dependencies with Pip.
 puts-step "Installing dependencies using Pip ($PIP_VERSION)"
 

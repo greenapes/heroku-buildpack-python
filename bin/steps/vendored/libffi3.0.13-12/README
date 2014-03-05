@@ -1,0 +1,4 @@
+These files are copied from packages libffi6 and libffi-dev on a standard
+ubuntu 64bit.
+
+The only customized file is: pkg-config/libffi.pc

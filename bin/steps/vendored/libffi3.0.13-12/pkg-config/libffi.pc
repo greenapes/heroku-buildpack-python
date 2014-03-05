@@ -1,0 +1,10 @@
+prefix=/app/.heroku/vendor/lib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.0.13
+Libs: -lffi_pic
+Cflags: -I${includedir}/libffi -fPIC
